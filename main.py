@@ -26,7 +26,6 @@ while input_message != 'obrigado gpt':
 
     answer = response.choices[0].message.content
 
-
     ##print(json.dumps(json.loads(response.model_dump_json()), indent=4))
 
     messages.append({"role": "assistant", "content": answer})
