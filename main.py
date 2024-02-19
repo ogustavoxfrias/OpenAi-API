@@ -1,5 +1,5 @@
 #G.Frias - 19/02/2024
-#Antes de tentar dê uma lida na documentação da Api da OpenAi
+#Antes de tentar, dê uma lida na documentação da API da OpenAi.
 
 import os
 from openai import OpenAI
@@ -10,9 +10,7 @@ client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", OPENAI_API_KEY))
 
 model = "gpt-3.5-turbo"
 
-messages = [
-
-    ]
+messages = []
 
 input_message = input('Pergunte: ')
 messages.append({"role": "user", "content": input_message})
